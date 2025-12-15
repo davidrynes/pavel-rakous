@@ -31,7 +31,7 @@ export default function Header() {
               height={32}
               className="h-8 w-8"
             />
-            Pavel Rakouš
+            <span className="text-black">Pavel</span> Rakouš
           </Link>
 
           {/* Desktop Navigation */}
