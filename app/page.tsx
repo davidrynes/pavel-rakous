@@ -1,6 +1,8 @@
 import { getAuthor, getLatestBlogPosts, getAllServices, getSettings, getAllMedia } from '@/lib/sanity-queries'
 import HomePage from './HomePage'
 
+export const revalidate = 60
+
 export default async function Home() {
   const [author, latestPosts, services, settings, mediaItems] = await Promise.all([
     getAuthor(),
