@@ -14,6 +14,8 @@ export default function Header() {
     { href: '/', label: t('Domů', 'Home') },
     { href: '/blog', label: 'Blog' },
     { href: '/media', label: t('Média', 'Media') },
+    { href: '/reference', label: t('Reference', 'References') },
+    { href: '/skoleni', label: t('Školení', 'Seminars') },
     { href: '/balicky', label: t('Balíčky', 'Packages') },
     { href: '/o-mne', label: t('O mně', 'About') },
     { href: '/kontakt', label: t('Kontakt', 'Contact') },

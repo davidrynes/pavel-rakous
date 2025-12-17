@@ -196,3 +196,33 @@ export async function getMediaBySlug(slug: string) {
     { slug }
   )
 }
+
+export async function getAllTestimonials() {
+  return client.fetch(
+    `*[_type == "testimonial"] | order(order asc){
+      _id,
+      name,
+      role,
+      quoteCs,
+      quoteEn,
+      image
+    }`
+  )
+}
+
+export async function getAllSeminars() {
+  return client.fetch(
+    `*[_type == "seminar"] | order(date asc){
+      _id,
+      titleCs,
+      titleEn,
+      slug,
+      date,
+      location,
+      price,
+      descriptionCs,
+      descriptionEn,
+      registrationLink
+    }`
+  )
+}
